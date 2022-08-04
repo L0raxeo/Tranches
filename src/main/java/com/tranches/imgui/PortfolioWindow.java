@@ -69,6 +69,42 @@ public class PortfolioWindow
         // Search bar
         searchFilter = TImGui.inputText("Search", searchFilter);
         List<String> parsedSearchFilter = List.of(searchFilter.split(","));
+        List<Component> allComponentsWithSearchTags = new ArrayList<>();
+        if (!parsedSearchFilter.get(0).equals(""))
+        {
+            for (Component c : components)
+                c.disable();
+
+            for (Component c : components)
+            {
+                if (c.getParentUid() != -1)
+                    continue;
+
+                List<Component> componentsWithSearchTags = c.getComponentsWithTag(parsedSearchFilter);
+
+                for(Component taggedComponent : componentsWithSearchTags)
+                {
+                    allComponentsWithSearchTags.add(taggedComponent);
+                    taggedComponent.enable();
+
+                    for (Component child : taggedComponent.getAllChildren())
+                        child.enable();
+
+                    StringBuilder nameModifier = new StringBuilder(" | ");
+                    List<Component> allParents = taggedComponent.getAllParents();
+                    Collections.reverse(allParents);
+                    for (Component parent : allParents)
+                        nameModifier.append(parent.getName()).append(" > ");
+
+                    nameModifier.delete(nameModifier.length() - 3, nameModifier.length());
+
+                    taggedComponent.setNameModifiers(nameModifier.toString());
+                }
+            }
+        }
+        else
+            for (Component c : components)
+                c.enable();
 
         // Portfolio content
         try
@@ -78,18 +114,7 @@ public class PortfolioWindow
                 if (!c.isAlive())
                     removeComponent(c);
 
-                List<Component> componentsWithSearchTags = c.getComponentsWithTag(parsedSearchFilter);
-
-                if (componentsWithSearchTags.size() == 0)
-                {
-                    c.disable();
-                    System.out.println(componentsWithSearchTags);
-                }
-                else
-                    for (Component c1 : componentsWithSearchTags)
-                        c1.enable();
-
-                if (c.getParentUid() == -1 && !c.isDisabled())
+                if (c.getParentUid() == -1 && !c.isDisabled() || !parsedSearchFilter.get(0).equals("") && allComponentsWithSearchTags.contains(c))
                     c.defaultImGui();
             }
         }

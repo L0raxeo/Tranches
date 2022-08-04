@@ -25,6 +25,8 @@ public abstract class Component
     private transient  boolean isDisabled = false;
     private transient boolean isAlive = true;
 
+    private transient String nameModifiers = "";
+
     public Component()
     {
         this.name = "Default Name";
@@ -56,7 +58,7 @@ public abstract class Component
 
     public void defaultImGui()
     {
-        if (ImGui.treeNode(getName()))
+        if (ImGui.treeNode(getName() + getNameModifiers()))
         {
             imgui();
 
@@ -214,6 +216,29 @@ public abstract class Component
         return getComponentFromUid(getParentUid());
     }
 
+    public List<Component> getAllParents()
+    {
+        List<Component> allParents = new ArrayList<>();
+
+        allParents.add(this);
+
+        if (getParentUid() != -1)
+            allParents.addAll(getParent().getAllParents());
+
+        return allParents;
+    }
+
+    public List<Component> getAllChildren()
+    {
+
+        List<Component> allChildren = new ArrayList<>(getChildren());
+
+        for (Component child : getChildren())
+            allChildren.addAll(child.getAllChildren());
+
+        return allChildren;
+    }
+
     public List<String> getTagsAsList()
     {
         return Arrays.asList(getTags().split(","));
@@ -297,6 +322,16 @@ public abstract class Component
     public void enable()
     {
         this.isDisabled = false;
+    }
+
+    public String getNameModifiers()
+    {
+        return this.nameModifiers;
+    }
+
+    public void setNameModifiers(String modifiers)
+    {
+        this.nameModifiers = modifiers;
     }
 
 }

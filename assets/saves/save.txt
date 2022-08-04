@@ -271,7 +271,7 @@
     "properties": {
       "textFieldContent": "~$3.5T",
       "name": "Total Liabilities",
-      "tags": "total liablities",
+      "tags": "total liabilities",
       "childrenUids": [
         34,
         35
@@ -397,7 +397,7 @@
     "type": "com.tranches.components.EmptyComponent",
     "properties": {
       "name": "SCHD",
-      "tags": "",
+      "tags": "liabilities",
       "childrenUids": [],
       "parentUid": -1,
       "uid": 47,
