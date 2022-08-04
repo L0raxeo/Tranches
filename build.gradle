@@ -10,16 +10,17 @@ sourceCompatibility = 1.11
 repositories {
     jcenter()
     mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 }
 
 import org.gradle.internal.os.OperatingSystem
 
-project.ext.lwjglVersion = "3.3.1"
+project.ext.lwjglVersion = "3.3.2-SNAPSHOT"
 project.ext.jomlVersion = "1.10.4"
 project.ext.lwjglNatives = "natives-windows"
 project.ext.imguiVersion = '1.77-0.17.1'
@@ -58,7 +59,7 @@ dependencies {
     runtimeOnly "org.lwjgl:lwjgl-openal::$lwjglNatives"
     runtimeOnly "org.lwjgl:lwjgl-opengl::$lwjglNatives"
     runtimeOnly "org.lwjgl:lwjgl-stb::$lwjglNatives"
-    implementation "org.joml:joml:${jomlVersion}"
+    implementation "org.joml:joml:1.10.4"
 
     // Yahoo Finance API
     implementation 'com.yahoofinance-api:YahooFinanceAPI:3.17.0'
