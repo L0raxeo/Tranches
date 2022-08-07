@@ -40,11 +40,11 @@ public class StockTracker extends Component
         }
 
         ImGui.sameLine();
-        if (ImGui.button("+"))
-            setCurrentPosition(getCurrentPosition() + 1);
-        ImGui.sameLine();
         if (ImGui.button("-") && getCurrentPosition() != 0)
             setCurrentPosition(getCurrentPosition() - 1);
+        ImGui.sameLine();
+        if (ImGui.button("+"))
+            setCurrentPosition(getCurrentPosition() + 1);
 
         ImGui.text("Select the data you wish to track.");
         if (ImGui.checkbox("Stock Quotes", isTrackingPriceQuotes()))

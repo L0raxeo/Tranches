@@ -398,7 +398,7 @@
     "type": "com.tranches.components.EmptyComponent",
     "properties": {
       "name": "SCHD",
-      "tags": "etf,dividend,liabilities",
+      "tags": "etf,dividend,schd",
       "childrenUids": [],
       "parentUid": -1,
       "uid": 47,
