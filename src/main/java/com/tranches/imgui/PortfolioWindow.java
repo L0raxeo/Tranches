@@ -38,6 +38,7 @@ public class PortfolioWindow
         componentTypes.put(TextArea.class, "Text Area");
         componentTypes.put(TextField.class, "Text Field");
         componentTypes.put(RawTextField.class, "Raw Text Field");
+        componentTypes.put(StockTracker.class, "Stock Tracker");
     }
 
     public void imgui()
@@ -75,12 +76,13 @@ public class PortfolioWindow
             for (Component c : components)
                 c.disable();
 
+            // enables all tagged components
             for (Component c : components)
             {
                 if (c.getParentUid() != -1)
                     continue;
 
-                List<Component> componentsWithSearchTags = c.getComponentsWithTag(parsedSearchFilter);
+                List<Component> componentsWithSearchTags = c.getComponentsWithTags(parsedSearchFilter, new ArrayList<>());
 
                 for(Component taggedComponent : componentsWithSearchTags)
                 {
@@ -113,6 +115,9 @@ public class PortfolioWindow
             {
                 if (!c.isAlive())
                     removeComponent(c);
+
+                if (!c.showInPortfolio())
+                    continue;
 
                 if (c.getParentUid() == -1 && !c.isDisabled() || !parsedSearchFilter.get(0).equals("") && allComponentsWithSearchTags.contains(c))
                     c.defaultImGui();
@@ -157,7 +162,10 @@ public class PortfolioWindow
 
         try {
             FileWriter writer = new FileWriter(saveFilepath);
-            List<Component> compsToSerialize = new ArrayList<>(this.components);
+            List<Component> compsToSerialize = new ArrayList<>();
+            for (Component c : getComponents())
+                if (c.doSerialization())
+                    compsToSerialize.add(c);
             Type typeOfSrc = new TypeToken<List<Component>>(){}.getType();
             writer.write(gson.toJson(compsToSerialize, typeOfSrc));
             writer.close();

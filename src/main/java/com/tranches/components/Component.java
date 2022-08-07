@@ -24,6 +24,8 @@ public abstract class Component
 
     private transient  boolean isDisabled = false;
     private transient boolean isAlive = true;
+    private transient boolean doSerialization = true;
+    private transient boolean showInPortfolio = true;
 
     private transient String nameModifiers = "";
 
@@ -164,6 +166,36 @@ public abstract class Component
         {
             components.addAll(child.getComponentsWithTag(tags));
         }
+
+        return components;
+    }
+
+    public List<Component> getComponentsWithTags(List<String> tags, List<String> parentMatchingTags)
+    {
+        List<Component> components = new ArrayList<>();
+
+        List<String> curTags = new ArrayList<>(parentMatchingTags);
+
+        // Checks if tags match this component
+        if (new HashSet<>(getTagsAsList()).containsAll(tags))
+            components.add(this);
+        else
+        {
+            for (String tag : getTagsAsList())
+                if (tags.contains(tag))
+                    curTags.add(tag);
+        }
+
+        for (Component child : getChildren())
+            components.addAll(child.getComponentsWithTags(tags, curTags));
+
+        if (new HashSet<>(curTags).containsAll(tags))
+            for (String tag : tags)
+                if (getTagsAsList().contains(tag))
+                {
+                    components.add(this);
+                    break;
+                }
 
         return components;
     }
@@ -332,6 +364,26 @@ public abstract class Component
     public void setNameModifiers(String modifiers)
     {
         this.nameModifiers = modifiers;
+    }
+
+    public boolean doSerialization()
+    {
+        return this.doSerialization;
+    }
+
+    public void doSerialization(boolean doSerialization)
+    {
+        this.doSerialization = doSerialization;
+    }
+
+    public boolean showInPortfolio()
+    {
+        return this.showInPortfolio;
+    }
+
+    public void showInPortfolio(boolean show)
+    {
+        this.showInPortfolio = show;
     }
 
 }

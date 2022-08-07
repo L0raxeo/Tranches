@@ -9,7 +9,8 @@
         15,
         30,
         31,
-        48
+        48,
+        59
       ],
       "parentUid": -1,
       "uid": 0,
@@ -397,7 +398,7 @@
     "type": "com.tranches.components.EmptyComponent",
     "properties": {
       "name": "SCHD",
-      "tags": "liabilities",
+      "tags": "etf,dividend,liabilities",
       "childrenUids": [],
       "parentUid": -1,
       "uid": 47,
@@ -471,10 +472,26 @@
     "properties": {
       "textEntryContent": "Minimum 30% increase in EPS over 10 Years using 3-year averages at the beginning and end\n{[Y1 + Y2 + Y3] / 3} / {[Y8 + Y9 + Y10] / 3} \u003e 30%\n\nJPM: 40%^ increase",
       "name": "Average 10Y EPS Growth",
-      "tags": "",
+      "tags": "eps",
       "childrenUids": [],
       "parentUid": 2,
       "uid": 55,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.StockTracker",
+    "properties": {
+      "ticker": "JPM",
+      "currentPosition": 0,
+      "priceQuotes": true,
+      "dividends": true,
+      "priceHistory": true,
+      "name": "Stock Tracker",
+      "tags": "stock tracker",
+      "childrenUids": [],
+      "parentUid": 0,
+      "uid": 59,
       "separateWindow": false
     }
   }

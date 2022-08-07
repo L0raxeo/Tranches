@@ -30,6 +30,7 @@ public class ImGuiLayer
     private final ImGuiImplGlfw imGuiGlfw = new ImGuiImplGlfw();
 
     private final PortfolioWindow portfolioWindow = PortfolioWindow.getInstance();
+    private final OverviewWindow overviewWindow = OverviewWindow.getInstance();
 
     public ImGuiLayer(long glfwWindow)
     {
@@ -74,7 +75,7 @@ public class ImGuiLayer
 
         // Fonts merge example
         fontConfig.setPixelSnapH(true);
-        fontAtlas.addFontFromFileTTF("assets/fonts/segoui.ttf", 24, fontConfig);
+        fontAtlas.addFontFromFileTTF("assets/fonts/segoui.ttf", 32, fontConfig);
 
         fontConfig.destroy(); // After all fonts were added we don't need this config more
 
@@ -89,6 +90,7 @@ public class ImGuiLayer
         setupDockSpace();
 
         portfolioWindow.imgui();
+        overviewWindow.imgui();
 
         endFrame();
     }
