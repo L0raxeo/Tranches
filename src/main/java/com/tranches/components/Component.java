@@ -331,6 +331,11 @@ public abstract class Component
         return this.isAlive;
     }
 
+    public void live()
+    {
+        this.isAlive = true;
+    }
+
     public void die()
     {
         // destroys children components

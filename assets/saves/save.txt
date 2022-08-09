@@ -399,7 +399,9 @@
     "properties": {
       "name": "SCHD",
       "tags": "etf,dividend,schd",
-      "childrenUids": [],
+      "childrenUids": [
+        60
+      ],
       "parentUid": -1,
       "uid": 47,
       "separateWindow": false
@@ -483,15 +485,51 @@
     "type": "com.tranches.components.StockTracker",
     "properties": {
       "ticker": "JPM",
-      "currentPosition": 0,
       "priceQuotes": true,
       "dividends": true,
+      "eps": true,
+      "pe": true,
+      "bvps": true,
+      "pb": true,
       "priceHistory": true,
       "name": "Stock Tracker",
       "tags": "stock tracker",
-      "childrenUids": [],
+      "childrenUids": [
+        62
+      ],
       "parentUid": 0,
       "uid": 59,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.StockTracker",
+    "properties": {
+      "ticker": "SCHD",
+      "priceQuotes": true,
+      "dividends": true,
+      "eps": false,
+      "pe": false,
+      "bvps": false,
+      "pb": false,
+      "priceHistory": true,
+      "name": "Stock Tracker",
+      "tags": "stock_tracker",
+      "childrenUids": [],
+      "parentUid": 47,
+      "uid": 60,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "EPS: earnings per share - eps \u003e 0\nP/E: price to earnings - pe \u003c 16\nBVPS: book value per share - bvps \u003e share price\nP/B: price to book - pb \u003c 3",
+      "name": "Ratio Definitions",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 59,
+      "uid": 62,
       "separateWindow": false
     }
   }

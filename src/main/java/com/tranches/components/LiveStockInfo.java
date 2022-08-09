@@ -4,7 +4,6 @@ import imgui.ImGui;
 import yahoofinance.Stock;
 import yahoofinance.YahooFinance;
 import yahoofinance.histquotes.HistoricalQuote;
-import yahoofinance.histquotes2.HistoricalDividend;
 import yahoofinance.quotes.stock.StockDividend;
 
 import java.io.IOException;
@@ -22,12 +21,21 @@ public class LiveStockInfo extends Component
     private transient String ticker;
     private transient String stockName;
 
-    private BigDecimal dayLow;
-    private BigDecimal dayHigh;
-    private StockDividend stockDividend;
-    private List<HistoricalQuote> priceHistory;
+    private transient BigDecimal dayLow;
+    private transient BigDecimal dayHigh;
+    private transient StockDividend stockDividend;
+    private transient BigDecimal eps;
+    private transient BigDecimal pe;
+    private transient BigDecimal bvps;
+    private transient BigDecimal pb;
+    private transient List<HistoricalQuote> priceHistory;
 
     public LiveStockInfo(StockTracker tracker) throws IOException
+    {
+        init(tracker);
+    }
+
+    public void init(StockTracker tracker) throws IOException
     {
         this.tracker = tracker;
         this.ticker = tracker.getTicker();
@@ -37,6 +45,10 @@ public class LiveStockInfo extends Component
         this.dayLow = stock.getQuote(true).getDayLow();
         this.dayHigh = stock.getQuote(true).getDayHigh();
         this.stockDividend = stock.getDividend(true);
+        this.eps = stock.getStats(true).getEps();
+        this.pe = stock.getStats(true).getPe();
+        this.bvps = stock.getStats(true).getBookValuePerShare();
+        this.pb = stock.getStats(true).getPriceBook();
         this.priceHistory = new ArrayList<>(stock.getHistory());
 
         setName("Ticker: " + ticker + " | " + "Name: " + stockName);
@@ -48,14 +60,22 @@ public class LiveStockInfo extends Component
     public void defaultImGui()
     {
         if (tracker.isTrackingPriceQuotes())
-        {
             ImGui.text("Today's Price Quote Range: $" + dayLow + " - $" + dayHigh);
-        }
 
         if (tracker.isTrackingDividends())
-        {
             ImGui.text(String.valueOf(stockDividend));
-        }
+
+        if (tracker.isTrackingEarningsPerShare())
+            ImGui.text("EPS: " + eps);
+
+        if (tracker.isTrackingPriceToEarnings())
+            ImGui.text("P/E: " + pe);
+
+        if (tracker.isTrackingBookValuePerShare())
+            ImGui.text("Book Value Per Share: " + bvps);
+
+        if (tracker.isTrackingPriceToBook())
+            ImGui.text("Price/Book: " + pb);
 
         if (tracker.isTrackingPriceHistory())
         {

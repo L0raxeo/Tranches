@@ -163,9 +163,11 @@ public class PortfolioWindow
         try {
             FileWriter writer = new FileWriter(saveFilepath);
             List<Component> compsToSerialize = new ArrayList<>();
+
             for (Component c : getComponents())
                 if (c.doSerialization())
                     compsToSerialize.add(c);
+
             Type typeOfSrc = new TypeToken<List<Component>>(){}.getType();
             writer.write(gson.toJson(compsToSerialize, typeOfSrc));
             writer.close();
@@ -193,6 +195,7 @@ public class PortfolioWindow
         if (!inFile.equals("")) {
             int maxCompId = -1;
             Component[] comps = gson.fromJson(inFile, Component[].class);
+
             for (Component comp : comps) {
                 addComponent(comp);
 
@@ -203,6 +206,23 @@ public class PortfolioWindow
             maxCompId++;
             Component.init(maxCompId);
         }
+
+
+        for (Component c : getComponents())
+            if (c.getClass() == LiveStockInfo.class)
+            {
+                c.live();
+
+                for (Component parent : getComponents())
+                    if (parent.getUid() == c.getParentUid()) {
+                        try {
+                            ((LiveStockInfo) c).init((StockTracker) parent);
+                            c.doSerialization(true);
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }
+            }
     }
 
     public List<Component> getComponents()

@@ -30,7 +30,6 @@ public class ImGuiLayer
     private final ImGuiImplGlfw imGuiGlfw = new ImGuiImplGlfw();
 
     private final PortfolioWindow portfolioWindow = PortfolioWindow.getInstance();
-    private final OverviewWindow overviewWindow = OverviewWindow.getInstance();
 
     public ImGuiLayer(long glfwWindow)
     {
@@ -90,7 +89,6 @@ public class ImGuiLayer
         setupDockSpace();
 
         portfolioWindow.imgui();
-        overviewWindow.imgui();
 
         endFrame();
     }
