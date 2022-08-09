@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="assets">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tranches_jar/assets</output-path>
+    <root id="root">
+      <element id="dir-copy" path="$PROJECT_DIR$/assets" />
+    </root>
+  </artifact>
+</component>

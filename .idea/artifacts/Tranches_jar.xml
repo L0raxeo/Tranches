@@ -1,0 +1,45 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tranches:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Tranches_jar</output-path>
+    <root id="archive" name="Tranches.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/assets/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="Tranches.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-commons/1.9.0/b727889107fc28c7460b21d1083212f8ce7602c6/junit-platform-commons-1.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.2-SNAPSHOT/79f3f5d98f7ed7ad02e3e1dfa4d3bef895b7efa6/lwjgl-glfw-3.3.2-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.25/da76ca59f6a57ee3102f8f9bd9cee742973efa8a/slf4j-api-1.7.25.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.spair/imgui-java-lwjgl3/1.86.4/a538b7aa58be1c26e0dfe0b5395aaf58cb24e3dd/imgui-java-lwjgl3-1.86.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.2-SNAPSHOT/6cc79747357fb56b9714d33c1fb48cec24343944/lwjgl-glfw-3.3.2-SNAPSHOT-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.2-SNAPSHOT/3adfea18082dce58043df5d88a84c0ac6ed344b9/lwjgl-openal-3.3.2-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-engine/5.9.0/cc1cb5efae97493dcffb687253a0964ad2e7b99/junit-jupiter-engine-5.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.platform/junit-platform-engine/1.9.0/bd46891f01817b5ffdd368cb0482a34746610acb/junit-platform-engine-1.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.2-SNAPSHOT/4ed254237e784e5a4d3866693ccc6fe6f20a95c3/lwjgl-3.3.2-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.2-SNAPSHOT/6d8215c558dbd177d6bb2b59d2416adad95ebd1e/lwjgl-glfw-3.3.2-SNAPSHOT-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.2-SNAPSHOT/5ab365f51b9a3aa848ee9decd7c99aa035cf31c6/lwjgl-stb-3.3.2-SNAPSHOT-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.opentest4j/opentest4j/1.2.0/28c11eb91f9b6d8e200631d46e20a7f407f2a046/opentest4j-1.2.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-openal/3.3.2-SNAPSHOT/33333219862498f2ee7421ba8917843b5109d37e/lwjgl-openal-3.3.2-SNAPSHOT-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-glfw/3.3.2-SNAPSHOT/815b5cbdc30b41811157d0bda0bc0156081b4cb8/lwjgl-glfw-3.3.2-SNAPSHOT-natives-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.4/19cb0a0f0f8a938785ebd5b2a2268ea2e65dabae/joml-1.10.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.12.6/9487231edd6b0b1f14692c9cba9e0462809215d1/jackson-annotations-2.12.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.2-SNAPSHOT/24f73772f1ba363d7c9fd56a5c05e0914e08fcb/lwjgl-3.3.2-SNAPSHOT-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yahoofinance-api/YahooFinanceAPI/3.17.0/e28671d62a0b3f47d3a9a548e5ea150568528828/YahooFinanceAPI-3.17.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.spair/imgui-java-binding/1.86.4/f97d32963ed5988b19f725d6c7d9946091cc3ba7/imgui-java-binding-1.86.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.2-SNAPSHOT/cb926f7f02c9f28949106a9d0789438a9f1d0e0f/lwjgl-opengl-3.3.2-SNAPSHOT-natives-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.2-SNAPSHOT/179e0305751b9c1e83e137d3ee95caa882474608/lwjgl-opengl-3.3.2-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.12.6.1/df01cc0c2d4acb913d73d587274986a12e3dec8c/jackson-databind-2.12.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.12.6/5bf206c0b5982cfcd868b3d9349dc5190db8bab5/jackson-core-2.12.6.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-nfd/3.3.2-SNAPSHOT/e45431c4bf2f2fd79a58b778ee23244c8000ec03/lwjgl-nfd-3.3.2-SNAPSHOT-natives-windows.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-nfd/3.3.2-SNAPSHOT/549c88ce31aa6257fbe9c37621b520ed860b679d/lwjgl-nfd-3.3.2-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.2-SNAPSHOT/ffec3ee30e942c2c86dc735615f0e132074a479a/lwjgl-3.3.2-SNAPSHOT-natives-linux.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.2-SNAPSHOT/bc13d1a7b3527499afb6d21deb46133cdd8e4ef8/lwjgl-opengl-3.3.2-SNAPSHOT-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl/3.3.2-SNAPSHOT/8708a63457705ea4a8f31f6cfd73f435e9d48ce5/lwjgl-3.3.2-SNAPSHOT-natives-macos.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.9.0/8a1167e089096758b49f9b34066ef98b2f4b37aa/gson-2.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.github.spair/imgui-java-app/1.86.4/23a06b57a93761cd02b242051e9117bac40d0f7/imgui-java-app-1.86.4.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-stb/3.3.2-SNAPSHOT/a4a900b3187497394432786f3787995f42d6da35/lwjgl-stb-3.3.2-SNAPSHOT.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.junit.jupiter/junit-jupiter-api/5.9.0/a44f7eba3ea214f6ec87ad9fccd3b2ac4681a4/junit-jupiter-api-5.9.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.imgui.java/natives-windows/1.77-0.17.1/c1e723a75ac6dfba79b3a1056b79cee846be000d/natives-windows-1.77-0.17.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.lwjgl/lwjgl-opengl/3.3.2-SNAPSHOT/63099f61f567cc557b7b8944f9a9dd02770a5516/lwjgl-opengl-3.3.2-SNAPSHOT-natives-windows.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

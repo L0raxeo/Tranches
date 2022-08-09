@@ -1,0 +1,536 @@
+[
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "JPM",
+      "tags": "bank,finance,financial institution,stock,company,jpm",
+      "childrenUids": [
+        2,
+        15,
+        30,
+        31,
+        48,
+        59
+      ],
+      "parentUid": -1,
+      "uid": 0,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Stock Info",
+      "tags": "dividends,growth,cagr,compound annual growth rate,stock info",
+      "childrenUids": [
+        3,
+        4,
+        5,
+        53,
+        54,
+        55
+      ],
+      "parentUid": 0,
+      "uid": 2,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Dividend Yield TTM: 3.50%",
+      "name": "Default Name",
+      "tags": "Dividend Yield TTM",
+      "childrenUids": [],
+      "parentUid": 2,
+      "uid": 3,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Dividend Yield Average 10Yrs: ~2.8%",
+      "name": "Default Name",
+      "tags": "Dividend Yield Average 10Yrs",
+      "childrenUids": [],
+      "parentUid": 2,
+      "uid": 4,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Compound Annual Growth Rate: 4.0%",
+      "name": "Default Name",
+      "tags": "Compound Annual Growth Rate",
+      "childrenUids": [],
+      "parentUid": 2,
+      "uid": 5,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Revenue",
+      "tags": "revenue,income",
+      "childrenUids": [
+        17,
+        20,
+        23,
+        26
+      ],
+      "parentUid": 0,
+      "uid": 15,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Consumer \u0026 Community Banking - CCB",
+      "tags": "ccb",
+      "childrenUids": [
+        18,
+        19
+      ],
+      "parentUid": 15,
+      "uid": 17,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "Provides services to consumers and businesses\n- Deposit \u0026 investment products\n- Cash management\n- Payment solutions\n- Mortgage origination and servicing\n- Credit-card issuance\n- Auto loans\n",
+      "name": "Description",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 17,
+      "uid": 18,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Percentage of Revenue: ~40%",
+      "name": "Default Name",
+      "tags": "Percentage of Revenue",
+      "childrenUids": [],
+      "parentUid": 17,
+      "uid": 19,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Corporate \u0026 Investment Banking - CIB",
+      "tags": "cib",
+      "childrenUids": [
+        21,
+        22
+      ],
+      "parentUid": 15,
+      "uid": 20,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "Provides services to corporations, investors, financial institutions, and governments\n- Investment banking\n- Market-making\n- Prime brokerage\n- Treasury \u0026 securities products\n",
+      "name": "Description",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 20,
+      "uid": 21,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Percentage of Revenue: ~37%",
+      "name": "Default Name",
+      "tags": "Percentage of Revenue",
+      "childrenUids": [],
+      "parentUid": 20,
+      "uid": 22,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Commercial Banking - CB",
+      "tags": "cb",
+      "childrenUids": [
+        24,
+        25
+      ],
+      "parentUid": 15,
+      "uid": 23,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "",
+      "name": "Description",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 23,
+      "uid": 24,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Percentage of Revenue: ~8%",
+      "name": "Default Name",
+      "tags": "Percentage of Revenue",
+      "childrenUids": [],
+      "parentUid": 23,
+      "uid": 25,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Asset \u0026 Wealth Management - AWM",
+      "tags": "awm",
+      "childrenUids": [
+        27,
+        28
+      ],
+      "parentUid": 15,
+      "uid": 26,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "- Provides services across all asset classes\n- Provides retirement products and services\n- Provides brokerage and banking services",
+      "name": "Description",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 26,
+      "uid": 27,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Percentage of Revenue: 14%",
+      "name": "Default Name",
+      "tags": "Percentage of Revenue",
+      "childrenUids": [],
+      "parentUid": 26,
+      "uid": 28,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "- Finance and banking\n- 1st in industry within the U.S.",
+      "name": "Industry",
+      "tags": "industry",
+      "childrenUids": [],
+      "parentUid": 0,
+      "uid": 30,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Liabilities",
+      "tags": "liabilities,debt",
+      "childrenUids": [
+        33,
+        36,
+        40,
+        43
+      ],
+      "parentUid": 0,
+      "uid": 31,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextField",
+    "properties": {
+      "textFieldContent": "~$3.5T",
+      "name": "Total Liabilities",
+      "tags": "total liabilities",
+      "childrenUids": [
+        34,
+        35
+      ],
+      "parentUid": 31,
+      "uid": 33,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Common Stock Net: ~$4B",
+      "name": "Default Name",
+      "tags": "Common Stock Net",
+      "childrenUids": [],
+      "parentUid": 33,
+      "uid": 34,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Retained Earnings: ~$272T",
+      "name": "Default Name",
+      "tags": "Retained Earnings",
+      "childrenUids": [],
+      "parentUid": 33,
+      "uid": 35,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Long-Term Liabilities",
+      "tags": "long-term,longterm,long term",
+      "childrenUids": [
+        45,
+        46
+      ],
+      "parentUid": 31,
+      "uid": 36,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Liability Ratios",
+      "tags": "ratio",
+      "childrenUids": [
+        42,
+        44
+      ],
+      "parentUid": 31,
+      "uid": 40,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Long-Term Debt/Capital: 0.5",
+      "name": "Default Name",
+      "tags": "Long-Term Debt/Capital",
+      "childrenUids": [],
+      "parentUid": 40,
+      "uid": 42,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "While JPM passes the debt test long term, their total current liabilities exceeds their total current assets- despite their long-term rations being the inverse.\nD/E \u003d 1.693 meaning they have x1.693 more debt than equity\nLong-Term Debt/Capital meaning they have half as much long term debt as they do capital",
+      "name": "Notes on Liabilities",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 31,
+      "uid": 43,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Debt/Equity: 1.693",
+      "name": "Default Name",
+      "tags": "Debt/Equity",
+      "childrenUids": [],
+      "parentUid": 40,
+      "uid": 44,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Total Long Term Liabilities: ~$311B",
+      "name": "Default Name",
+      "tags": "Total Long Term Liabilities",
+      "childrenUids": [],
+      "parentUid": 36,
+      "uid": 45,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Total Long Term Assets: ~$1.1T",
+      "name": "Default Name",
+      "tags": "Total Long Term Assets",
+      "childrenUids": [],
+      "parentUid": 36,
+      "uid": 46,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "SCHD",
+      "tags": "etf,dividend,schd",
+      "childrenUids": [
+        60
+      ],
+      "parentUid": -1,
+      "uid": 47,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Assets/Capital",
+      "tags": "capital,assets",
+      "childrenUids": [
+        51,
+        52
+      ],
+      "parentUid": 0,
+      "uid": 48,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Total Current Assets: ~$2.6T",
+      "name": "Default Name",
+      "tags": "Total Current Assets",
+      "childrenUids": [],
+      "parentUid": 48,
+      "uid": 51,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Total Long-Term Assets: ~$1.1T",
+      "name": "Default Name",
+      "tags": "Total Long-Term Assets",
+      "childrenUids": [],
+      "parentUid": 48,
+      "uid": 52,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "P/E TTM: 9.06",
+      "name": "Default Name",
+      "tags": "P/E TTM",
+      "childrenUids": [],
+      "parentUid": 2,
+      "uid": 53,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "15 * [P/B] \u003c 22.5: 19.95x",
+      "name": "Default Name",
+      "tags": "15 * [P/B] \u003c 22.5",
+      "childrenUids": [],
+      "parentUid": 2,
+      "uid": 54,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "Minimum 30% increase in EPS over 10 Years using 3-year averages at the beginning and end\n{[Y1 + Y2 + Y3] / 3} / {[Y8 + Y9 + Y10] / 3} \u003e 30%\n\nJPM: 40%^ increase",
+      "name": "Average 10Y EPS Growth",
+      "tags": "eps",
+      "childrenUids": [],
+      "parentUid": 2,
+      "uid": 55,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.StockTracker",
+    "properties": {
+      "ticker": "JPM",
+      "priceQuotes": true,
+      "dividends": true,
+      "eps": true,
+      "pe": true,
+      "bvps": true,
+      "pb": true,
+      "priceHistory": true,
+      "name": "Stock Tracker",
+      "tags": "stock tracker",
+      "childrenUids": [
+        62
+      ],
+      "parentUid": 0,
+      "uid": 59,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.StockTracker",
+    "properties": {
+      "ticker": "SCHD",
+      "priceQuotes": true,
+      "dividends": true,
+      "eps": false,
+      "pe": false,
+      "bvps": false,
+      "pb": false,
+      "priceHistory": true,
+      "name": "Stock Tracker",
+      "tags": "stock_tracker",
+      "childrenUids": [],
+      "parentUid": 47,
+      "uid": 60,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.TextArea",
+    "properties": {
+      "textEntryContent": "EPS: earnings per share - eps \u003e 0\nP/E: price to earnings - pe \u003c 16\nBVPS: book value per share - bvps \u003e share price\nP/B: price to book - pb \u003c 3",
+      "name": "Ratio Definitions",
+      "tags": "",
+      "childrenUids": [],
+      "parentUid": 59,
+      "uid": 62,
+      "separateWindow": false
+    }
+  }
+]
