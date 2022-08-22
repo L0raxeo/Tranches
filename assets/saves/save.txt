@@ -400,7 +400,8 @@
       "name": "SCHD",
       "tags": "etf,dividend,schd",
       "childrenUids": [
-        60
+        60,
+        64
       ],
       "parentUid": -1,
       "uid": 47,
@@ -508,10 +509,10 @@
       "ticker": "SCHD",
       "priceQuotes": true,
       "dividends": true,
-      "eps": false,
-      "pe": false,
-      "bvps": false,
-      "pb": false,
+      "eps": true,
+      "pe": true,
+      "bvps": true,
+      "pb": true,
       "priceHistory": true,
       "name": "Stock Tracker",
       "tags": "stock_tracker",
@@ -530,6 +531,31 @@
       "childrenUids": [],
       "parentUid": 59,
       "uid": 62,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.EmptyComponent",
+    "properties": {
+      "name": "Liabilities",
+      "tags": "debt,liabilities",
+      "childrenUids": [
+        65
+      ],
+      "parentUid": 47,
+      "uid": 64,
+      "separateWindow": false
+    }
+  },
+  {
+    "type": "com.tranches.components.RawTextField",
+    "properties": {
+      "textFieldContent": "Debt: $50",
+      "name": "Default Name",
+      "tags": "Debt",
+      "childrenUids": [],
+      "parentUid": 64,
+      "uid": 65,
       "separateWindow": false
     }
   }

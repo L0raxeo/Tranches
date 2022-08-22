@@ -106,7 +106,10 @@ public class PortfolioWindow
         }
         else
             for (Component c : components)
+            {
                 c.enable();
+                c.setNameModifiers("");
+            }
 
         // Portfolio content
         try
